@@ -78,28 +78,34 @@
 				tagIcons.Shadcn
 			],
 			srcImg: app1,
-			demo: 'https://github.com/SamuelParrales/app-nobody-answers-you-no'
+			demo: 'https://samuelparrales.github.io/sql-query-from-spreadsheet/',
+			repository: 'https://github.com/SamuelParrales/sql-query-from-spreadsheet'
 		},
 		{
 			title: 'News App',
-			description: 'View news in different languages ​​and countries.',
+			description: 'View news in different languages and countries.',
 			tags: [tagIcons.JavaScript, tagIcons.React, tagIcons.Vite, tagIcons.SCSS],
 			srcImg: app2,
-			demo: 'https://github.com/SamuelParrales/app-nobody-answers-you-no'
+			demo: 'https://samuelparrales.github.io/react-news-app/',
+			repository: 'https://github.com/SamuelParrales/react-news-app'
 		},
 		{
 			title: 'Digimon App',
 			description: 'More than 1000 digimon available.',
 			tags: [tagIcons.JavaScript, tagIcons.React, tagIcons.Vite, tagIcons.SCSS],
 			srcImg: app3,
-			demo: ''
+			demo: 'https://samuelparrales.github.io/react-digimon-app/',
+			repository: 'https://github.com/SamuelParrales/react-digimon-app'
 		},
 		{
 			title: 'Nobody answers you no App',
 			description: 'With this app you can have a partner.',
 			tags: [tagIcons.JavaScript, tagIcons.HTML, tagIcons.CSS],
 			srcImg: app4,
-			demo: 'https://github.com/SamuelParrales/app-nobody-answers-you-no'
+			demo: 'https://samuelparrales.github.io/app-nobody-answers-you-no/',
+			repository: 'https://github.com/SamuelParrales/app-nobody-answers-you-no',
+			example:
+				'https://samuelparrales.github.io/app-nobody-answers-you-no/dialog-box.html?question=will+you+marry+me%3F&answer=Ok%2C+we%27re+going+to+have+12+kids.'
 		}
 	];
 </script>

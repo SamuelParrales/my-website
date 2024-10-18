@@ -32,9 +32,10 @@
 								variant="link"
 								class="flex items-center gap-1 w-min text-md p-0"
 								target="_blank"
-								href={project.demo}
+								href={project.repository}
 							>
-								<Icon icon="carbon:link" /> <span class="text-neutral-400 font-alegreya">Demo</span>
+								<Icon icon="carbon:link" />
+								<span class="text-neutral-400 font-alegreya">Repository</span>
 							</Button>
 							<Button
 								variant="link"
@@ -42,9 +43,20 @@
 								target="_blank"
 								href={project.demo}
 							>
-								<Icon icon="carbon:link" />
-								<span class="text-neutral-400 font-alegreya">Repository</span>
+								<Icon icon="carbon:link" /> <span class="text-neutral-400 font-alegreya">Demo</span>
 							</Button>
+
+							{#if project.example}
+								<Button
+									variant="link"
+									class="flex items-center gap-1 w-min text-md p-0"
+									target="_blank"
+									href={project.example}
+								>
+									<Icon icon="carbon:link" />
+									<span class="text-neutral-400 font-alegreya">Example</span>
+								</Button>
+							{/if}
 						</div>
 					</div>
 					<div class="flex flex-wrap gap-2">
