@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+ 
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+ 
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+ 
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+ 
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+ 
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --ring: 0 0% 3.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: rgb(7, 7, 7);
+    --foreground: 0 0% 98%;
+ 
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+ 
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --card: #1C1C1C;
+    --card-foreground: #FAFAFA;
+ 
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    /* #008C9E */
+    /* --primary:  #007281; cyan oscuro  */
+    --primary:  #008C9E; 
+    --primary-foreground: #fff;
+
+
+    /* --secondary: #BDC3C7;  este me gusta */
+    --secondary: #66B2B2;
+    --secondary-foreground: #008C9E;
+ 
+    --accent: #D3D3D3;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --ring: 0 0% 83.1%;
+
+    .neon-primary:hover{
+      text-shadow:
+			0 0 5px #004c57,
+			/* Brillo más cercano */ 0 0 10px #004c57,
+			/* Brillo más tenue */ 0 0 20px #004c57,
+			/* Efecto de neón sutil */ 0 0 30px #004c57; /* Efecto de neón más oscuro */
+    }
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+h1,h2, h3{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+span, p{
+  color: var(--foreground);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* para las particulas */
+#tsparticles canvas {
+  z-index: -1;
+}
+
