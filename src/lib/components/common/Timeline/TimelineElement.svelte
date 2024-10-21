@@ -5,10 +5,10 @@
 	export let element;
 </script>
 
-<div class="mb-8">
-	<div class="flex gap-2 -ml-4">
-		<span class="bg-primary rounded-full p-1"
-			><Icon class="text-primary-foreground text-2xl" icon="game-icons:archery-target" /></span
+<div class="mb-4">
+	<div class="flex items-end gap-2 -ml-4">
+		<span class="bg-primary rounded-full p-1 h-min"
+			><Icon class="text-primary-foreground text-2xl" icon="tabler:target-arrow" /></span
 		>
 		<h3 class="text-secondary text-2xl">{element.job}</h3>
 	</div>
@@ -31,7 +31,7 @@
 		<p class="mb-4">
 			{@html element.description}
 		</p>
-		<div class="flex flex-wrap gap-2">
+		<div class="flex flex-wrap gap-2 pb-8">
 			{#each element.tags as tag}
 				<Tag {tag} />
 			{/each}

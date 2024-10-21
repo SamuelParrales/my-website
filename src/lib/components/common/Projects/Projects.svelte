@@ -3,12 +3,17 @@
 	import CardHeader from '$lib/components/ui/card/card-header.svelte';
 	import Card from '$lib/components/ui/card/card.svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
-
 	import Tag from '../Tag.svelte';
+	import type { HTMLAttributes } from 'svelte/elements';
 	import * as Dialog from '$lib/components/ui/dialog';
 	import { tick } from 'svelte';
 	import Icon from '@iconify/svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
+
+	type $$Props = HTMLAttributes<HTMLDivElement> &{
+		title: string, 
+		data: any[]
+	}
 	export let title;
 	export let data;
 
@@ -16,13 +21,13 @@
 		currentPrevImg: HTMLImageElement;
 </script>
 
-<Card class="bg-background border rounded-lg border-neutral-700 border-animation">
+<Card class="bg-background border rounded-lg border-neutral-700 border-animation" {...$$restProps}>
 	<CardHeader class="rounded-lg bg-card w-full">
 		<h2 class="mb-1 text-4xl text-primary">{title}</h2>
 	</CardHeader>
 	<CardContent class="px-4 pt-8 pb-2">
 		{#each data as project, index}
-			<div class="grid grid-cols-2 gap-4 mb-8">
+			<div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 mb-8">
 				<div class="flex flex-col justify-between gap-2 m-2">
 					<div class="h-full">
 						<h3 class="text-secondary text-2xl">{project.title}</h3>
@@ -85,8 +90,8 @@
 					}}
 				>
 					<img
-						class="transition duration-300 hover:scale-125 object-cover h-full"
-						height="10"
+						class="transition duration-300 hover:scale-125 object-cover h-full w-full"
+						
 						src={project.srcImg}
 						alt="aa"
 					/>

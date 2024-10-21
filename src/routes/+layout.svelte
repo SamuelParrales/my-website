@@ -6,7 +6,7 @@
 	import MainParticles from '$lib/components/common/MainParticles.svelte';
 </script>
 
-<MainParticles/>
+<!-- <MainParticles/> -->
 
 <NavBar />
 <slot></slot>

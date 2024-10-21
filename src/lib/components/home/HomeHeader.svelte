@@ -1,16 +1,19 @@
-<script>
+<script lang="ts">
 	import Icon from '@iconify/svelte';
+	import ButtonNeon from '../common/buttons/ButtonNeon.svelte';
+	import { socialNerworks } from '$lib/data/socialNetworks';
 </script>
 
-<header class="flex justify-center items-center">
+<header id="home" class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 items-center">
 	<div></div>
 	<div class="text-center p-5">
-		<h1 class="text-primary text-6xl">Samuel Parrales</h1>
-		<h2 class="text-secondary text-3xl">Full Stack Development</h2>
-		<h3 class="text-2xl">Turning your ideas into solutions that make a difference.</h3>
+		<h1 class="text-primary text-5xl md:text-6xl">Samuel Parrales</h1>
+		<h2 class="text-secondary text-2xl">Full Stack Development</h2>
+		<h3 class="text-xl">Turning your ideas into solutions that make a difference.</h3>
 		<div class="text-accent text-3xl flex justify-center gap-2">
-			<a class="transition-shadow rounded-md" href="/"><Icon icon="brandico:linkedin-rect" /></a>
-			<a class="transition-shadow rounded-md" href="/"><Icon icon="fa:github-square" /></a>
+			{#each socialNerworks as sn}
+				<ButtonNeon target="_blank" href={sn.href}><Icon icon={sn.icon} /></ButtonNeon>
+			{/each}
 		</div>
 	</div>
 </header>
@@ -27,8 +30,6 @@
 		background-repeat: no-repeat;
 		height: 600px;
 		background-size: cover;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 	}
 	h1,
 	h2,
@@ -65,11 +66,5 @@
 			/* Brillo más claro */ 0 0 10px rgba(189, 195, 199, 0.7),
 			/* Brillo más difuso */ 0 0 20px rgba(201, 207, 211, 0.568),
 			/* Efecto neón más pronunciado */ 0 0 30px rgba(201, 207, 212, 0.323); /* Efecto neón adicional */
-	}
-
-	a:hover{
-		box-shadow: 0 0 3px rgba(255, 255, 255, 0.5), 
-              0 0 6px rgba(255, 255, 255, 0.5), 
-              0 0 20px rgba(255, 255, 255, 0.6);
 	}
 </style>
