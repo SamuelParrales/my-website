@@ -17,7 +17,7 @@ export const projectsData = [
 		id: 'news-app',
 		title: 'News App',
 		description: 'View news in different languages and countries.',
-		tags: [tagIcons.JavaScript, tagIcons.React, tagIcons.Vite, tagIcons.SCSS],
+		tags: [tagIcons.JavaScript, tagIcons.React, tagIcons.Redux, tagIcons.Vite, tagIcons.SCSS],
 		srcImg: app2,
 		demo: 'https://samuelparrales.github.io/react-news-app/',
 		repository: 'https://github.com/SamuelParrales/react-news-app'
@@ -26,7 +26,7 @@ export const projectsData = [
 		id: 'digimon-app',
 		title: 'Digimon App',
 		description: 'More than 1000 digimon available.',
-		tags: [tagIcons.JavaScript, tagIcons.React, tagIcons.Redux,tagIcons.Vite, tagIcons.SCSS],
+		tags: [tagIcons.JavaScript, tagIcons.React, tagIcons.Redux, tagIcons.Vite, tagIcons.SCSS],
 		srcImg: app3,
 		demo: 'https://samuelparrales.github.io/react-digimon-app/',
 		repository: 'https://github.com/SamuelParrales/react-digimon-app'
