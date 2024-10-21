@@ -110,6 +110,11 @@ export const tagIcons = {
 		icon: 'devicon:tailwindcss',
 		class: 'text-2xl'
 	},
+	Redux:{
+		name: 'Redux',
+		icon: 'devicon:redux',
+		class: 'text-2xl'
+	},
 	TypeScript: {
 		name: 'TypeScript',
 		icon: 'skill-icons:typescript',
