@@ -16,8 +16,8 @@
 		currentPrevImg: HTMLImageElement;
 </script>
 
-<Card class="bg-background border rounded-lg border-neutral-700">
-	<CardHeader class="rounded-lg bg-card">
+<Card class="bg-background border rounded-lg border-neutral-700 border-animation">
+	<CardHeader class="rounded-lg bg-card w-full">
 		<h2 class="mb-1 text-4xl text-primary">{title}</h2>
 	</CardHeader>
 	<CardContent class="px-4 pt-8 pb-2">
@@ -111,7 +111,4 @@
 </Dialog.Root>
 
 <style>
-	/* #prueba{
-        background: linear-gradient(to bottom left, rgb(33, 39, 45), rgb(15, 23, 28), rgb(13, 17, 22));
-    } */
 </style>

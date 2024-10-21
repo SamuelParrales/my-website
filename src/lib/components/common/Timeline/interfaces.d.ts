@@ -11,6 +11,6 @@ export interface TimeLineData {
 	type: string;
 	start: date;
 	end: date | 'now';
-    description: string,
-    tags: TagIcon[]
+	description: string;
+	tags: TagIcon[];
 }

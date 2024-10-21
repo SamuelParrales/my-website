@@ -21,11 +21,11 @@ const config = {
 				background: "var(--background)",
 				foreground: "hsl(var(--foreground) / <alpha-value>)",
 				primary: {
-					DEFAULT: "var(--primary)",
+					DEFAULT: "hsl(var(--primary) / <alpha-value>)",
 					foreground: "var(--primary-foreground)"
 				},
 				secondary: {
-					DEFAULT: "var(--secondary)",
+					DEFAULT: "hsl(var(--secondary) / <alpha-value>)",
 					foreground: "var(--secondary-foreground)"
 				},
 				destructive: {
@@ -58,7 +58,8 @@ const config = {
 				sans: [...fontFamily.sans],
 				alegreya: ['"Alegreya", serif'],
 			}
-		}
+		},
+		
 	},
 };
 

@@ -1,16 +1,19 @@
 <script lang="ts">
-	export let title = 'none';
 	import Card from '../../ui/card/card.svelte';
 	import CardHeader from '../../ui/card/card-header.svelte';
 	import CardContent from '../../ui/card/card-content.svelte';
 	import TimelineElement from './TimelineElement.svelte';
 	import type { TimeLineData } from './interfaces';
-	export let data: TimeLineData[] = [];
 
+	import type { TimeLineProps } from './types';
+	type $$Props = TimeLineProps;
+	export let data: TimeLineData[] = [];
+	export let title = 'none';
+	export let className = '';
 </script>
 
-<Card class="bg-background border rounded-lg border-neutral-700">
-	<CardHeader class="rounded-lg bg-card">
+<Card class="bg-background border rounded-lg border-neutral-700 border-animation {className}" {...$$restProps}>
+	<CardHeader class="rounded-lg bg-card w-full">
 		<h2 class="mb-1 text-4xl text-primary transition-all duration-300">{title}</h2>
 	</CardHeader>
 	<CardContent class="px-8 pt-8 pb-2">

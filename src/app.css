@@ -53,13 +53,15 @@
     --input: 0 0% 14.9%;
     /* #008C9E */
     /* --primary:  #007281; cyan oscuro  */
-    --primary:  #008C9E; 
+    /* --primary:  #008C9E;  */
+    --primary: 187 100% 31%; 
     --primary-foreground: #fff;
 
 
     /* --secondary: #BDC3C7;  este me gusta */
-    --secondary: #66B2B2;
-    --secondary-foreground: #008C9E;
+    /* --secondary: #66B2B2; */
+    --secondary: 180 33% 55%;
+    --secondary-foreground: #fff;
  
     --accent: #D3D3D3;
     --accent-foreground: 0 0% 98%;
@@ -99,9 +101,9 @@ h1,h2, h3{
 
 
 
-span, p{
+span, p, a, button, div{
   color: var(--foreground);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -114,3 +116,43 @@ span, p{
   z-index: -1;
 }
 
+
+.border-animation{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+.border-animation:hover::before{
+  content: '';
+  position: absolute;
+  width: 400%;
+  height: 400%;
+  background-image: conic-gradient(#4e4e4e 0deg, transparent 120deg);
+  animation: rotate 3s linear infinite;
+  z-index: 1;
+}
+.border-animation::after{
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  border-radius: inherit;
+  height: calc(100% - 3px);
+  width: calc(100% - 3px);
+  z-index: 2;
+}
+.border-animation *{
+  z-index: 3;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}

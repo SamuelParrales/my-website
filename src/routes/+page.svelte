@@ -113,13 +113,15 @@
 <HomeHeader />
 <main class="mt-8">
 	<div class="mx-auto max-w-3xl">
-		<Timeline title="Expecience" {data} />
+		<Timeline id="experiencie" title="Expecience" {data} />
 	</div>
 </main>
-<section class="mt-8">
+<section class="mt-8 mb-16">
 	<div class="mx-auto max-w-3xl">
 		<Projects title="Public projects" data={projectsData} />
 	</div>
 </section>
-<footer class="mt-8"></footer>
-<section></section>
+
+<style>
+	
+</style>

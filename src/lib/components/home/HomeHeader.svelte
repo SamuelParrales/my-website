@@ -9,8 +9,8 @@
 		<h2 class="text-secondary text-3xl">Full Stack Development</h2>
 		<h3 class="text-2xl">Turning your ideas into solutions that make a difference.</h3>
 		<div class="text-accent text-3xl flex justify-center gap-2">
-			<a href="/"><Icon icon="brandico:linkedin-rect" /></a>
-			<a href="/"><Icon icon="fa:github-square" /></a>
+			<a class="transition-shadow rounded-md" href="/"><Icon icon="brandico:linkedin-rect" /></a>
+			<a class="transition-shadow rounded-md" href="/"><Icon icon="fa:github-square" /></a>
 		</div>
 	</div>
 </header>
@@ -65,5 +65,11 @@
 			/* Brillo más claro */ 0 0 10px rgba(189, 195, 199, 0.7),
 			/* Brillo más difuso */ 0 0 20px rgba(201, 207, 211, 0.568),
 			/* Efecto neón más pronunciado */ 0 0 30px rgba(201, 207, 212, 0.323); /* Efecto neón adicional */
+	}
+
+	a:hover{
+		box-shadow: 0 0 3px rgba(255, 255, 255, 0.5), 
+              0 0 6px rgba(255, 255, 255, 0.5), 
+              0 0 20px rgba(255, 255, 255, 0.6);
 	}
 </style>
