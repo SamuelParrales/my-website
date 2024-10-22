@@ -95,7 +95,7 @@
 					<img
 						class="transition duration-300 hover:scale-125 object-cover h-full w-full"
 						src={project.srcImg}
-						alt="aa"
+						alt={project.altImg}
 					/>
 				</div>
 			</div>
