@@ -19,9 +19,9 @@
 		</div>
 		<div>
 			<h3 class="text-xl">Projects</h3>
-			<nav class="flex flex-col justify-start">
+			<nav class="flex flex-col justify-start ">
 				{#each projectsData as project}
-					<Button variant="link" target='_blank' href={project.demo} class="w-min p-0 text-neutral-400 text-base"
+					<Button variant="link" target='_blank' href={project.demo || project.repository} class="w-min p-0 text-neutral-400 text-base"
 						>{project.title}</Button
 					>
 				{/each}

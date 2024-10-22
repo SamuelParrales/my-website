@@ -34,6 +34,11 @@ export const tagIcons = {
 		icon: 'skill-icons:expressjs-dark',
 		class: 'text-xl'
 	},
+	Heroku:{
+		name: 'Heroku',
+		icon: 'skill-icons:heroku',
+		class: 'text-2xl',
+	},
 	HTML: {
 		name: 'HTML',
 		icon: 'skill-icons:html',
@@ -65,6 +70,11 @@ export const tagIcons = {
 		icon: 'logos:sap',
 		class: 'text-xl'
 	},
+	Railway: {
+		name: 'Railway',
+		icon: 'simple-icons:railway',
+		class: 'text-xl'
+	},
 	MariaDB: {
 		name: 'MariaDB',
 		icon: 'logos:mariadb-icon',
@@ -73,6 +83,11 @@ export const tagIcons = {
 	MongoDB: {
 		name: 'MongoDB',
 		icon: 'devicon:mongodb',
+		class: 'text-2xl'
+	},
+	MySQL: {
+		name: 'MySQL',
+		icon: 'devicon:mysql',
 		class: 'text-2xl'
 	},
 	Nextjs: {
@@ -110,7 +125,7 @@ export const tagIcons = {
 		icon: 'devicon:tailwindcss',
 		class: 'text-2xl'
 	},
-	Redux:{
+	Redux: {
 		name: 'Redux',
 		icon: 'devicon:redux',
 		class: 'text-2xl'

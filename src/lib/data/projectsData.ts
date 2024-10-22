@@ -3,6 +3,7 @@ import app1 from '$lib/assets/apps/app1.webp';
 import app2 from '$lib/assets/apps/app2.webp';
 import app3 from '$lib/assets/apps/app3.webp';
 import app4 from '$lib/assets/apps/app4.webp';
+import app5 from '$lib/assets/apps/app5.webp';
 export const projectsData = [
 	{
 		id: 'sql-from-spreadsheet',
@@ -30,6 +31,15 @@ export const projectsData = [
 		srcImg: app3,
 		demo: 'https://samuelparrales.github.io/react-digimon-app/',
 		repository: 'https://github.com/SamuelParrales/react-digimon-app'
+	},
+	{
+		id: 'swgrbe',
+		title: 'SWGRBE',
+		description:
+			'Created in collaboration with a student from the Universidad Estatal del Sur de Manabí with the purpose of collecting electronic waste.',
+		tags: [tagIcons.JavaScript, tagIcons.Vite, tagIcons.Laravel,tagIcons.MySQL,tagIcons.Railway,tagIcons.Bootstrap],
+		srcImg: app5,
+		repository: 'https://github.com/SamuelParrales/SWGRBE'
 	},
 	{
 		id: 'nobody-answers-you-no-app',

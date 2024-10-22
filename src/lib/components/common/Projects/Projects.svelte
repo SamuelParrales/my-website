@@ -10,10 +10,10 @@
 	import Icon from '@iconify/svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 
-	type $$Props = HTMLAttributes<HTMLDivElement> &{
-		title: string, 
-		data: any[]
-	}
+	type $$Props = HTMLAttributes<HTMLDivElement> & {
+		title: string;
+		data: any[];
+	};
 	export let title;
 	export let data;
 
@@ -42,14 +42,17 @@
 								<Icon icon="carbon:link" />
 								<span class="text-neutral-400 font-alegreya">Repository</span>
 							</Button>
-							<Button
-								variant="link"
-								class="flex items-center gap-1 w-min text-md p-0"
-								target="_blank"
-								href={project.demo}
-							>
-								<Icon icon="carbon:link" /> <span class="text-neutral-400 font-alegreya">Demo</span>
-							</Button>
+							{#if project.demo}
+								<Button
+									variant="link"
+									class="flex items-center gap-1 w-min text-md p-0"
+									target="_blank"
+									href={project.demo}
+								>
+									<Icon icon="carbon:link" />
+									<span class="text-neutral-400 font-alegreya">Demo</span>
+								</Button>
+							{/if}
 
 							{#if project.example}
 								<Button
@@ -91,7 +94,6 @@
 				>
 					<img
 						class="transition duration-300 hover:scale-125 object-cover h-full w-full"
-						
 						src={project.srcImg}
 						alt="aa"
 					/>
