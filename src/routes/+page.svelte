@@ -1,10 +1,9 @@
 <script lang="ts">
-
 	import { tagIcons } from '$lib/components/common/Timeline/data';
 	import type { TimeLineData } from '$lib/components/common/Timeline/interfaces';
 	import Timeline from '$lib/components/common/Timeline/Timeline.svelte';
 	import HomeHeader from '$lib/components/home/HomeHeader.svelte';
-	
+
 	import Projects from '$lib/components/common/Projects/Projects.svelte';
 	import { projectsData } from '$lib/data/projectsData';
 
@@ -17,7 +16,13 @@
 				'The development of a catering inventory management system improved efficiency in services and planning processes.',
 			start: new Date('2022-04'),
 			end: new Date('2022-12'),
-			tags: [tagIcons.JavaScript, tagIcons.Laravel, tagIcons.MariaDB, tagIcons.Bootstrap],
+			tags: [
+				tagIcons.JavaScript,
+				tagIcons.Laravel,
+				tagIcons.MariaDB,
+				tagIcons.Heroku,
+				tagIcons.Bootstrap
+			],
 			type: 'Freelance'
 		},
 		{
@@ -64,8 +69,6 @@
 			]
 		}
 	];
-
-
 </script>
 
 <HomeHeader />
@@ -81,5 +84,4 @@
 </section>
 
 <style>
-	
 </style>
