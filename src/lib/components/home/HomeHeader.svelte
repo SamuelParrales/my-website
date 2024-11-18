@@ -23,10 +23,10 @@
 		background-image: linear-gradient(
 				to right,
 				rgba(255, 255, 255, 0) 0%,
-				rgba(0, 0, 0, 0.7) 35%,
+				rgba(0, 0, 0, 0.7) 40%,
 				rgba(0, 0, 0, 0.9) 80%
 			),
-			url(header4.jpg);
+			url(header.webp);
 		background-repeat: no-repeat;
 		height: 600px;
 		background-size: cover;
