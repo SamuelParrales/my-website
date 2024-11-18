@@ -68,7 +68,7 @@
 				tagIcons.Trello
 			]
 		}
-	];
+	].reverse();
 </script>
 
 <HomeHeader />
@@ -84,4 +84,5 @@
 </section>
 
 <style>
+	
 </style>
