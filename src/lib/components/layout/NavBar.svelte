@@ -3,7 +3,8 @@
 	import * as Sheet from '$lib/components/ui/sheet';
 	import Icon from '@iconify/svelte';
 	import Button from '../ui/button/button.svelte';
-	import iconWeb from '$lib/assets/icon.webp';
+	import iconWeb from '$lib/assets/icon-home.webp';
+
 	import { menus } from '$lib/data/menus';
 </script>
 

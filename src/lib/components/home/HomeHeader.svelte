@@ -2,9 +2,15 @@
 	import Icon from '@iconify/svelte';
 	import ButtonNeon from '../common/buttons/ButtonNeon.svelte';
 	import { socialNerworks } from '$lib/data/socialNetworks';
+	import headerImg from '$lib/assets/header.webp';
+	let imageUrl = headerImg;
 </script>
 
-<header id="home" class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 items-end md:items-center">
+<header
+	id="home"
+	class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 items-end lg:items-center"
+	style="--image-url: url('{imageUrl}')"
+>
 	<div></div>
 	<div class="text-center px-5 py-2 md:p-5">
 		<h1 class="text-primary text-5xl md:text-6xl">Samuel Parrales</h1>
@@ -21,27 +27,48 @@
 <style>
 	header {
 		background-repeat: no-repeat;
-			height: 600px;
+		height: 600px;
+		background-size: 200%;
+		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0.8) 0%,
+				rgba(0, 0, 0, 0) 30%,
+				rgba(0, 0, 0, 0.3) 55%,
+				rgba(0, 0, 0, 1) 70%
+			),
+			var(--image-url);
+		background-position:
+			0,
+			5% 0;
+		@media (min-width: 512px) {
+			background-size: 180%;
+			background-position:
+				0,
+				2% 0;
+		}
+		@media (min-width: 640px) {
+			background-size: 149%;
+			background-position:
+				0,
+				0% 0;
+		}
+		@media (min-width: 768px) {
+			background-size: 110%;
+			background-position:
+				0,
+				0% 0;
+		}
+		@media (min-width: 1024px) {
 			background-size: cover;
 			background-image: linear-gradient(
-					to bottom,
-					rgba(255, 255, 255, 0) 0%,
-					rgba(0, 0, 0, 0.7) 45%,
-					rgba(0, 0, 0, 0.8) 60%,
-					rgba(0, 0, 0, 0.9) 80%
-				),
-				url(header.webp);
-				background-position: 0 , 20%;
-		@media (min-width: 768px) {
-			
-			background-image: linear-gradient(
 					to right,
-					rgba(255, 255, 255, 0) 0%,
-					rgba(0, 0, 0, 0.7) 40%,
-					rgba(0, 0, 0, 0.9) 80%
+					rgba(0, 0, 0, 0.8) 0%,
+					rgba(0, 0, 0, 0.1) 30%,
+					rgba(0, 0, 0, 0.6) 50%,
+					rgba(0, 0, 0, 0.78) 80%
 				),
-				url(header.webp);
-			height: 600px;		
+				var(--image-url);
+			height: 600px;
 		}
 	}
 	h1,
