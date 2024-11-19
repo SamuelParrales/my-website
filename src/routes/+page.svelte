@@ -14,8 +14,8 @@
 			location: 'Riobamba, Chimborazo, Ecuador',
 			description:
 				'The development of a catering inventory management system improved efficiency in services and planning processes.',
-			start: new Date('2022-04'),
-			end: new Date('2022-12'),
+			start: new Date('2022-05-01T00:00:01'),
+			end: new Date('2022-11-01T00:00:01'),
 			tags: [
 				tagIcons.JavaScript,
 				tagIcons.Laravel,
@@ -30,8 +30,8 @@
 			company: 'Sistemas Génesis',
 			location: 'Portoviejo, Manabí, Ecuador',
 			type: 'Full-time in-person',
-			start: new Date('2022-12'),
-			end: new Date('2024-11'),
+			start: new Date('2022-11-01T00:00:01'),
+			end: new Date('2024-11-01T00:00:01'),
 			description: `I worked with the <strong>Genesis Web contable</strong>, improving efficiency by optimizing queries, as well as developing sophisticated UIs and new functionalities, such as integration with a fingerprint security system, billing UI, real-time advertising module, agricultural module, among others.`,
 			tags: [
 				tagIcons.JavaScript,
@@ -51,7 +51,7 @@
 			company: 'Lion Tech',
 			location: 'Santiago de Chile, Chile',
 			type: 'Freelance',
-			start: new Date('2024-02'),
+			start: new Date('2024-02-01T00:00:01'),
 			end: 'now',
 			description:
 				'Creation of functionalities and integration of services to the Connect platform, with the purpose of offering more information about electricity consumption to customers.',

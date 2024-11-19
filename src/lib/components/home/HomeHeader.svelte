@@ -4,9 +4,9 @@
 	import { socialNerworks } from '$lib/data/socialNetworks';
 </script>
 
-<header id="home" class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 items-center">
+<header id="home" class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 items-end md:items-center">
 	<div></div>
-	<div class="text-center p-5">
+	<div class="text-center px-5 py-2 md:p-5">
 		<h1 class="text-primary text-5xl md:text-6xl">Samuel Parrales</h1>
 		<h2 class="text-secondary text-2xl">Full Stack Development</h2>
 		<h3 class="text-xl">Turning your ideas into solutions that make a difference.</h3>
@@ -20,16 +20,29 @@
 
 <style>
 	header {
-		background-image: linear-gradient(
-				to right,
-				rgba(255, 255, 255, 0) 0%,
-				rgba(0, 0, 0, 0.7) 40%,
-				rgba(0, 0, 0, 0.9) 80%
-			),
-			url(header.webp);
 		background-repeat: no-repeat;
-		height: 600px;
-		background-size: cover;
+			height: 600px;
+			background-size: cover;
+			background-image: linear-gradient(
+					to bottom,
+					rgba(255, 255, 255, 0) 0%,
+					rgba(0, 0, 0, 0.7) 45%,
+					rgba(0, 0, 0, 0.8) 60%,
+					rgba(0, 0, 0, 0.9) 80%
+				),
+				url(header.webp);
+				background-position: 0 , 20%;
+		@media (min-width: 768px) {
+			
+			background-image: linear-gradient(
+					to right,
+					rgba(255, 255, 255, 0) 0%,
+					rgba(0, 0, 0, 0.7) 40%,
+					rgba(0, 0, 0, 0.9) 80%
+				),
+				url(header.webp);
+			height: 600px;		
+		}
 	}
 	h1,
 	h2,
