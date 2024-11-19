@@ -27,9 +27,21 @@
 <style>
 	header {
 		background-repeat: no-repeat;
-		height: 600px;
 		background-size: 200%;
+		height: 500px;
 		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0.8) 0%,
+				rgba(0, 0, 0, 0) 25%,
+				rgba(0, 0, 0, 0.3) 40%,
+				rgba(0, 0, 0, 1) 60%
+			),
+			var(--image-url);
+		background-position:
+			0,
+			5% 0;
+		@media (min-width: 384px) {
+			background-image: linear-gradient(
 				to bottom,
 				rgba(0, 0, 0, 0.8) 0%,
 				rgba(0, 0, 0, 0) 30%,
@@ -37,10 +49,10 @@
 				rgba(0, 0, 0, 1) 70%
 			),
 			var(--image-url);
-		background-position:
-			0,
-			5% 0;
+			
+		}
 		@media (min-width: 512px) {
+			height: 600px;
 			background-size: 180%;
 			background-position:
 				0,

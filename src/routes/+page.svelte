@@ -72,12 +72,12 @@
 </script>
 
 <HomeHeader />
-<main class="mt-8 px-4">
+<main class="mt-8 px-3">
 	<div class="mx-auto max-w-3xl">
 		<Timeline id="experience" title="Expecience" {data} />
 	</div>
 </main>
-<section class="mt-8 mb-16 px-4">
+<section class="mt-8 mb-16 px-3">
 	<div class="mx-auto max-w-3xl">
 		<Projects id="public-projects" title="Public projects" data={projectsData} />
 	</div>

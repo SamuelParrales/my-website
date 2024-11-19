@@ -25,7 +25,7 @@
 	<CardHeader class="rounded-lg bg-card w-full">
 		<h2 class="mb-1 text-4xl text-primary">{title}</h2>
 	</CardHeader>
-	<CardContent class="px-4 pt-8 pb-2">
+	<CardContent class="px-2 pt-8 pb-2">
 		{#each data as project, index}
 			<div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 mb-8">
 				<div class="flex flex-col justify-between gap-2 m-2">
