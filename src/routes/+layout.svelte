@@ -7,7 +7,7 @@
 	
 </script>
 
-<!-- <MainParticles/> -->
+<MainParticles/>
 
 <NavBar />
 <slot></slot>

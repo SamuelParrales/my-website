@@ -16,7 +16,7 @@
 	<CardHeader class="rounded-lg bg-card w-full">
 		<h2 class="mb-1 text-4xl text-primary transition-all duration-300">{title}</h2>
 	</CardHeader>
-	<CardContent class="px-8 pt-8 pb-2">
+	<CardContent class="ps-6 pe-2 pt-8 pb-2">
 		{#each data as d}
 			<TimelineElement element={d} />
 		{/each}

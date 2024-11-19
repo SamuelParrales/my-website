@@ -41,7 +41,7 @@
 				enable: true
 			},
 			number: {
-				value: 75
+				value: 17
 			}
 		}
 	}}

@@ -3,7 +3,8 @@
 	import * as Sheet from '$lib/components/ui/sheet';
 	import Icon from '@iconify/svelte';
 	import Button from '../ui/button/button.svelte';
-	import iconWeb from '$lib/assets/icon.webp';
+	import iconWeb from '$lib/assets/icon-home.webp';
+	import { base } from '$app/paths'
 	import { menus } from '$lib/data/menus';
 </script>
 
@@ -13,7 +14,7 @@
 	<Menubar.Root class="border-none flex justify-between bg-transparent m-0 p-0 w-10/12 md:w-3/4">
 		<div class="w-9">
 			<Menubar.Menu>
-				<a href="/"><img src={iconWeb} class="w-max" alt="" /></a>
+				<a href={base}><img src={iconWeb} class="w-max" alt="" /></a>
 			</Menubar.Menu>
 		</div>
 		<div class="hidden md:block">
