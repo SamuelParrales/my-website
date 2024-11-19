@@ -74,7 +74,7 @@
 <HomeHeader />
 <main class="mt-8 px-3">
 	<div class="mx-auto max-w-3xl">
-		<Timeline id="experience" title="Expecience" {data} />
+		<Timeline id="experience" title="Experience" {data} />
 	</div>
 </main>
 <section class="mt-8 mb-16 px-3">
